@@ -4,7 +4,6 @@
   padding-top: 30px;
 }
 
-
 .input-wrapper {
   position: relative;
   width: 200px;
@@ -15,7 +14,6 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 .input-effect {border: 0; padding: 7px 0; border-bottom: 1px solid #ccc;}
 .input-effect ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #4caf50; transition: 0.4s;}
 .input-effect:focus ~ .focus-border{width: 250px; transition: 0.4s;}
-
 
 .button {
   display: block;

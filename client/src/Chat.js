@@ -13,6 +13,7 @@ function Chat() {
   let { id } = useParams();
   
   useEffect(() => {
+    //on mount get messages from server
     socket.on('message_client',(data) => {
       setChatLog(data);
     });
