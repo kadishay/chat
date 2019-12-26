@@ -25,19 +25,21 @@ function Chat() {
 
   return (
     <div className="Chat">
+      <div className="chat-text">
         {chatLog.map((msg)=><div key={msg.id}> {`${msg.from} : ${msg.message}`}</div>)}
-        <div className="chat-menu">
-          <div className="input-wrapper">
-            <input className="chat-input input-effect" type="text" value={chatText} onChange={ (e) => {setChatTest(e.target.value)} }/>
-            <span class="focus-border"></span>
-          </div>
-          <input
-            className="button chat-send"
-            type="button"
-            value="Send"
-            onClick={handleSend}
-          />
+      </div>
+      <div className="chat-menu">
+        <div className="input-wrapper">
+          <input className="chat-input input-effect" type="text" value={chatText} onChange={ (e) => {setChatTest(e.target.value)} }/>
+          <span className="focus-border"></span>
         </div>
+        <input
+          className="button chat-send"
+          type="button"
+          value="Send"
+          onClick={handleSend}
+        />
+      </div>
     </div>
   );
 }
