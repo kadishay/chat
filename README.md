@@ -6,6 +6,9 @@ Installation:
 Start: (from main folder)
 1. yarn start
 
-Used create react app - in the client folder + added a proxy in the package json to communicate with server.
-Server is a simple ....
-Added socket io for chat messages
+Explanation:
+Used create react app - in the client folder
+Server is a simple socket IO proxy
+Client has a react router and including: 
+login page which should appear on http://localhost:3000/
+chat page http://localhost:3000/chat/:userId
