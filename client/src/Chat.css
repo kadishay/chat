@@ -7,3 +7,10 @@
   justify-content: center;
   padding-bottom: 10px;
 }
+
+.Chat .chat-send {
+  z-index: 10;
+  left: 70px;
+  position: relative;
+  bottom: 10px;
+}

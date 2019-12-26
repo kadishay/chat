@@ -10,8 +10,11 @@ function Login() {
         Welcome!
         What is your name?
         <div className="login-menu">
-          <input className="login-input" type="text" value={name} onChange={ (e) => {setName(e.target.value)} }/>
-          <Link to={`/chat/${name}/`} className="login-connect">Connect</Link>
+          <div className="input-wrapper">
+            <input className="input-effect" placeholder="Type your name" type="text" value={name} onChange={ (e) => {setName(e.target.value)} }/>
+            <span class="focus-border"></span>
+          </div>
+          <Link to={`/chat/${name}/`} className="button">Connect</Link>
         </div>
     </div>
   );

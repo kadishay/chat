@@ -4,8 +4,8 @@
 
 .Login .login-menu {
   padding-top: 10px;
-}
-
-.Login .login-menu .login-connect {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
